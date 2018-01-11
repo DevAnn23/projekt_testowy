@@ -84,17 +84,12 @@ body {
 	font-family: 'Helvetica', 'Tahoma', sans-serif;
 }
 
-
-
-
-
-
+a {
+	text-decoration: none;
 }
 
 .main {
 	background-color: #80bcc4;
-
-
 }
 
 /* header */
@@ -136,6 +131,7 @@ body {
 	margin-left: 2%;
 	color: #fff;
 }
+
 .navbar-child1:hover {
 	color: #12a;
 	transition: 2s;
@@ -699,6 +695,7 @@ button#contact:hover {
 	margin: 0 3%;
 	font-size: 0.9em;
 }
+
 /*footer*/
 
 .footer {
@@ -713,14 +710,31 @@ button#contact:hover {
 	mask-clip: content-box;
 
 }
+
 .copyright {
 	float: left;
 	margin: 0 2%;
 	font-weight: 100;
 	font-size: 0.8em;
 }
+
 .list-footer {
 	margin-top: 0;
 	margin-top: 0;
 	font-size: 0.8em;
+}
+.aside {
+	bottom: 0;
+	left: 90%;
+	background-color: greenyellow;
+	text-align: center;
+	padding: 2px 0;
+	width: 50px;
+	height: 50px;
+	position: relative;
+
+}
+.top-page {
+	color: #fff;
+	font-size: 1.2em;
 }
