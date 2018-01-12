@@ -33,6 +33,7 @@
 		margin: 0!important;
 		text-align: center;
 	}
+
 	body *,
 	body > * {
 		font-size: 8px !important;
@@ -84,12 +85,17 @@ body {
 	font-family: 'Helvetica', 'Tahoma', sans-serif;
 }
 
-a {
-	text-decoration: none;
+
+
+
+
+
 }
 
 .main {
 	background-color: #80bcc4;
+
+
 }
 
 /* header */
@@ -110,6 +116,10 @@ a {
 		padding-left: 10px;
 		font-family: 'Fira Mono', sans-serif;
 	}
+}
+
+.header * {
+	z-index: 1;
 }
 
 .logo-link {
@@ -149,7 +159,6 @@ a {
 	padding: 0 5px;
 	color: #fff;
 	text-align: center;
-	font-weight: 800;
 }
 
 .menu-item {
@@ -648,9 +657,8 @@ button#contact:hover {
 .label {
 	width: 100%;
 	display: block;
+	padding: 10px 0;
 	font-size: 1em;
-	padding: 10px 0 0px 0;
-	font-family: cursive;
 }
 
 .input {
@@ -660,11 +668,33 @@ button#contact:hover {
 	border-top: 1px double #171717;
 	border-left: 1px double #333333;
 	border-right: 1px double #333333;
+	position: relative;
+	display: inline-block;
 }
 
-#test {
+#addition {
 	width: 5%;
 	float: left;
+}
+
+/* sprawdzanie danych formularza*/
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.label:before {
+	content: "*";
+	position: relative;
+	top: 20px;
+	left: -20px;
+	visibility: visible;
+	color: #cc0000;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+
 }
 
 .message {
@@ -679,7 +709,7 @@ button#contact:hover {
 }
 
 .form-button {
-	margin: 0 0 10px 0;
+	margin: 5px 0 10px 0;
 	padding: 4px 7px;
 	background: #cc0000;
 	border: 2px solid #cc0000;
@@ -722,19 +752,4 @@ button#contact:hover {
 	margin-top: 0;
 	margin-top: 0;
 	font-size: 0.8em;
-}
-.aside {
-	bottom: 0;
-	left: 90%;
-	background-color: greenyellow;
-	text-align: center;
-	padding: 2px 0;
-	width: 50px;
-	height: 50px;
-	position: relative;
-
-}
-.top-page {
-	color: #fff;
-	font-size: 1.2em;
 }

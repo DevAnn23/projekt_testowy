@@ -12,7 +12,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Fira+Mono&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lalezar&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href="style.css" rel="stylesheet">
-	<script  src="script.js" defear></script>
+
 
 </head>
 
@@ -191,29 +191,46 @@
 			</div>
 			<div class="contact flexbox">
 				<div class="contact-box">
-					<form class="form">
+					<form class="form" id="form">
 						<h1 class="form-heading">Formularz kontaktowy:</h1>
-						<label class="label" for="name">Your Name:</label>
-						<input type="text" class="input" name="name" id="name" />
-						<label class="label" for="email">Your E-mail:</label>
-						<input type="text" class="input" name="email" id="email" />
+						<label class="label" for="name">Your Name</label>
+						<input type="text" class="input" name="name" autofocus required />
+						<div class="tooltip"></div>
+
+						<label class="label" for="email">Your E-mail</label>
+						<input type="text" class="input" name="email" id="email" required/>
+						<div class="tooltip"></div>
+
+						<label class="label" for="phone">Your Phone Number</label>
+						<input type="text" class="input" name="phone" id="phone" required/>
+						<div class="tooltip" id="tooltipNumber"></div>
+
 						<label class="label" for="message">Speak Your Mind</label>
-						<textarea class="message" name="message" id="message"></textarea>
-						<label class="label" for="test">2 + 2 </label>
-						<input type="text" class="input" name="test" id="test" />
+						<textarea class="message" name="message" id="message" required></textarea>
+
+
+						<label class="label" id="labelAdd" for="addition"></label>
+						<input type="text" class="input" name="addition" id="addition" required />
+						<div class="tooltip" id="tooltipAdd"></div>
+
 						<p class="form-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen</p>
-						<input type="submit" class="form-button" value="Submit" />
+						<div class="form-group">
+							<label for="exampleFormControlFile1"></label>
+							<input type="file" class="form-control-file" name="exampleFormControlFile1" id="exampleFormControlFile1">
+						</div>
+						<input type="submit" class="form-button" name="form-button" value="Submit" />
+						<div class="tooltip" id="tooltipSend"></div>
 					</form>
 				</div>
 				<div class="coment-box">
 					<div class="coment">
-						<time datetime="2012-01-01" class="time">January 1st 2012</time>
+						<time class="time">April 1st 2012</time>
 						<h4 class="coment-heading">WE'RE HIRING!</h4>
 						<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
 						</p>
 					</div>
 					<div class="coment">
-						<time datetime="2012-05-01" class="time">May 1st 2012</time>
+						<time class="time">April 1st 2012</time>
 						<h4 class="coment-heading">WE'RE HIRING!</h4>
 						<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
 						</p>
@@ -228,7 +245,10 @@
 					</ul>
 				</div>
 			</div>
-			<aside class="aside"><a class="top-page" href="#"><span class="fa fa-caret-up" aria-hidden="true"></span><br>UP</a></aside>
+			<div>
+
+			</div>
+
 		</section>
 
 	</main>
@@ -241,6 +261,7 @@
 			<li class="item-list-footer"><a class="menu-link-footer" href="#">Contact</a></li>
 		</ul>
 	</footer>
+	<script src="script.js"></script>
 </body>
 
 </html>
