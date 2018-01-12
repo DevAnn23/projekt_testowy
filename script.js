@@ -26,7 +26,6 @@ window.onload = function () {
 
 		}, 3000);
 	}
-
 	myFunction();
 
 	function validForm() {
@@ -39,40 +38,59 @@ window.onload = function () {
 		var tooltipSend = document.getElementById('tooltipSend');
 		var tooltipNumber = document.getElementById('tooltipNumber');
 		var tooltipAdd = document.getElementById('tooltipAdd');
-		var isOk = true;
-		var intAddNumber = parseInt(additionField.value);
+		var tooltipEmail = document.getElementById('tooltipEmail');
+		var isOkEmail = true;
+		var isOkAdd = true;
+		var isOkPhone = true;
 
 		function addNumber() {
 			var num1 = Math.floor(Math.random() * 10);
 			var num2 = Math.floor(Math.random() * 10);
-			console.log(num1 + num2);
 
 			labelAdd.innerHTML = num1 + "+" + num2;
 
 			additionField.onkeyup = function (e) {
 				if (parseInt(additionField.value) === num1 + num2 && parseInt(additionField.value) != null) {
-					console.log("jest ok");
-					isOk = true;
+					isOkAdd = true;
 
 				} else {
-					isOk = false;
-					console.log("jest none");
+					isOkAdd = false;
 				}
 			}
 		}
 		addNumber();
-		phoneField.onkeyup = function (e) {
-			if (this.value === "" || isNaN(this.value)) {
-				tooltipNumber.innerHTML = "Invalid number";
-				isOk = false;
 
-			} else {
-				tooltipNumber.innerHTML = "";
-				isOk = true;
+		function addEmail() {
+			emailField.onkeyup = function (e) {
+
+				if (!(this.value.includes("@") && this.value.includes(".") && !this.value.includes(" "))) {
+					isOkEmail = false;
+					tooltipEmail.innerHTML = "Invalid email";
+					console.log("incl");
+				} else {
+					isOkEmail = true;
+					console.log("ioppp");
+					tooltipEmail.innerHTML = "";
+				}
 			}
 		}
+
+		addEmail();
+		function enterNumber() {
+			phoneField.onkeyup = function (e) {
+				if (this.value === "" || e.which === 32 || isNaN(this.value)) { // 32 kod klawisza spacji
+					tooltipNumber.innerHTML = "Invalid number";
+					isOkPhone = false;
+
+				} else {
+					tooltipNumber.innerHTML = "";
+					isOkPhone = true;
+				}
+			}
+		}
+		enterNumber();
 		formButton.onclick = function (e) {
-			if (!isOk) {
+			if (!isOkEmail || !isOkPhone || !isOkAdd) {
 				e.preventDefault();
 				tooltipSend.innerHTML = "Incorrect data";
 			} else {
@@ -80,7 +98,6 @@ window.onload = function () {
 			}
 
 		}
-
 	}
 	validForm();
 
