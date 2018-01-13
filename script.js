@@ -74,7 +74,6 @@ window.onload = function () {
 				}
 			}
 		}
-
 		addEmail();
 
 		function enterNumber() {

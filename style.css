@@ -120,11 +120,6 @@ a {
 a:hover {
 	color: #cc0000;
 }
-
-.header * {
-	z-index: 1;
-}
-
 .logo-link {
 	text-transform: uppercase;
 	text-decoration: none;
@@ -241,6 +236,7 @@ button#contact {
 	margin-bottom: 1%;
 	color: #fff;
 	cursor: pointer;
+	z-index: 1;
 
 }
 
