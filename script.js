@@ -1,4 +1,3 @@
-window.onload = function () {
 	function myFunction() {
 		var slide = document.getElementsByClassName("carousel-slide");
 		var item = 0;
@@ -30,6 +29,7 @@ window.onload = function () {
 
 	function validForm() {
 		var labelAdd = document.querySelector('#labelAdd');
+		var input = document.querySelector('input');
 		var phoneField = document.querySelector('.form').phone;
 		var emailField = document.querySelector('.form').email;
 		var messageField = document.querySelector('.form').message;
@@ -44,6 +44,11 @@ window.onload = function () {
 		var isOkEmail = true;
 		var isOkAdd = true;
 		var isOkPhone = true;
+		console.log(input);
+		function giveAtr(){
+			input.focus();
+		}
+		window.addEventListener("scroll", giveAtr);
 
 		function addNumber() {
 			var num1 = Math.floor(Math.random() * 10);
@@ -103,4 +108,4 @@ window.onload = function () {
 	}
 	validForm();
 
-}
+

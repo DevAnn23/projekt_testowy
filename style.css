@@ -237,7 +237,6 @@ button#contact {
 	color: #fff;
 	cursor: pointer;
 	z-index: 1;
-
 }
 
 button#contact:hover {
@@ -245,7 +244,6 @@ button#contact:hover {
 }
 
 /*  section - fetures - third flexbox */
-
 .features {
 	display: flex;
 	flex-flow: row;
