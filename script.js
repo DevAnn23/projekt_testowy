@@ -1,4 +1,4 @@
-window.oload = function () {
+
 	function myFunction() {
 		var slide = document.getElementsByClassName("carousel-slide");
 		var item = 0;
@@ -106,4 +106,4 @@ window.oload = function () {
 
 
 
-};
+
