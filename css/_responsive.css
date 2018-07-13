@@ -1,0 +1,87 @@
+@media all and (min-width: 767px) {
+  html {
+    font-size: 11px;
+  }
+  .features {
+    padding: 5em 0 7em 0;
+  }
+  .card-info,
+  .section-form {
+    flex-direction: row !important;
+  }
+  .section-apps {
+    padding: 3em 0;
+  }
+  .contact-section {
+    padding-top: 9em;
+  }
+  .aside {
+    display: block;
+  }
+  .arrow-img {
+    display: inline-block;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+  .flexbox {
+    flex-direction: row;
+  }
+  main {
+    background-position: top center;
+  }
+  .main-heading {
+    line-height: 85px;
+  }
+  .features,
+  .contact-section {
+    padding: 2.5em 0 4em 0;
+  }
+  .flex-3 article {
+    flex-basis: 30%;
+  }
+  .menu-item {
+    display: inline-block;
+  }
+  .send {
+    width: 130px;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  main {
+    padding: 0 5em 0 7em;
+  }
+  .shape {
+    display: block !important;
+  }
+  .carousel-slide .text {
+    min-height: 100px;
+    padding-top: 0.5em;
+  }
+  .carousel-slide .info {
+    float: left;
+    max-width: 150px;
+  }
+  .aside {
+    right: -7%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .features {
+    min-height: 402px;
+  }
+  .section-team {
+    min-height: 560px;
+  }
+  .flexbox {
+    flex-wrap: wrap;
+  }
+  footer.flexbox {
+    flex-wrap: wrap-reverse;
+  }
+}

@@ -7,161 +7,228 @@
 	<meta name="theme-color" content="#ffffff">
 	<meta name="MobileOptimized" content="320">
 	<meta name="HandheldFriendly" content="true">
-	<meta name="viewport" content="width=device-width, initial-scale=1, target-densitydpi=device-dpi">
-	<link rel="icon" href="icons/favicon.ico" type="image/x-icon">
-	<link href="font/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link href='http://fonts.googleapis.com/css?family=Fira+Mono&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lalezar&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<link href="style.css" rel="stylesheet">
+	<link href="css/style.min.css" rel="stylesheet">
 
 
 </head>
 
 <body>
-	<header class="header">
-		<nav class="navbar flexbox">
-			<a class="logo-link navbar-child1" href="#">
-				<h1 class="logo"> mobile ninjas </h1>
-			</a>
-
-			<ul class="menu navbar-child2">
-				<li class="menu-item"><a class="menu-link" href="#">Home</a></li>
-				<li class="menu-item"><a class="menu-link" href="#">Apps</a>
-					<ul class="submenu">
-						<li class="submenu-item"><a class="submenu-link" href="#">Standard</a></li>
-						<li class="submenu-item"><a class="submenu-link" href="#">More</a></li>
-					</ul>
-				</li>
-				<li class="menu-item"><a class="menu-link" href="#">Team</a>
-					<ul class="submenu">
-						<li class="submenu-item"><a class="submenu-link" href="#">Team A</a></li>
-						<li class="submenu-item"><a class="submenu-link" href="#">Team B</a></li>
-						<li class="submenu-item"><a class="submenu-link" href="#">Team C</a></li>
-					</ul>
-				</li>
-				<li class="menu-item"><a class="menu-link" href="#">Services</a>
-					<ul class="submenu">
-						<li class="submenu-item"><a class="submenu-link" href="#">For You</a></li>
-						<li class="submenu-item"><a class="submenu-link" href="#">For Your Company</a></li>
-					</ul>
-				</li>
-				<li class="menu-item"><a class="menu-link" href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-		<div class="header-content flexbox">
-			<div class="header-img-wrapper"><img class="header-img" src="icons/phone.png" alt="" /></div>
-
-			<div class="header-content">
-				<h2 class="main-heading">We create <br> <span class="main-heading-important">amazing apps!</span></h2>
-				<p class="header-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p><button id="contact" type="button">Check them out!</button><img src="icons/arrow.png" alt="arrow" />
-			</div>
-		</div>
-	</header>
 	<main class="main">
-		<section class="features">
-			<article class="feature">
-				<h3 class="feature-heading"><span class="fa fa-wrench feature-icon" aria-hidden="true"></span> From start to finish </h3>
-				<p class="feature-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-			</article>
+		<header class="header">
+			<nav class="navbar flexbox">
+				<a class="navbar-child " href="#">
+					<h1 class="logo"> mobile ninjas </h1>
+				</a>
 
-			<article class="feature">
-				<h3 class="feature-heading"><span class="fa fa-mobile feature-icon" aria-hidden="true"></span> Mobile & desktop </h3>
-				<p class="feature-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-			</article>
+				<ul class="navbar-child">
+					<li class="menu-item">
+						<a class="menu-link active" href="#">Home</a>
+					</li>
+					<li class="menu-item">
+						<a class="menu-link" href="#">Apps</a>
 
-			<article class="feature">
-				<h3 class="feature-heading"><span class="fa fa-flask feature-icon" aria-hidden="true"></span> Innovation </h3>
-				<p class="feature-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-			</article>
+					</li>
+					<li class="menu-item">
+						<a class="menu-link" href="#">Team</a>
+					</li>
+					<li class="menu-item">
+						<a class="menu-link" href="#">Services</a>
 
-			<article class="feature">
-				<h3 class="feature-heading"><span class="fa fa-steam feature-icon"></span> Game & social fun </h3>
-				<p class="feature-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...Lorem ipsum dolor sit amet</p>
-			</article>
-
-			<article class="feature">
-				<h3 class="feature-heading"><span class="fa fa-heart feature-icon" aria-hidden="true"></span> A care for standards </h3>
-				<p class="feature-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
-			</article>
-			<article class="feature">
-				<h3 class="feature-heading hidden">Ukryty nagłówek</h3>
-				<p class="bubble">Lorem ipsu Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore .</p>
-				<div class="fa fa-twitter fa-3x feature-icon" aria-hidden="true"></div>
-			</article>
-
-		</section>
-		<section class="carousel">
-			<div class="section-header flexbox">
-				<h3 class="section-heading">Shall we take a look at <br><span class="important-text">our work?</span></h3>
-				<p class="section-header-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...Lorem ipsum dolor sit amet</p>
+					</li>
+					<li class="menu-item">
+						<a class="menu-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header-content entry">
+				<h2 class="main-heading entry">We create
+					<br>
+					<span class="main-heading-important">amazing apps!</span>
+				</h2>
+				<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+					dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+					book. </p>
+				<button id="check" type="button">Check them out!</button>
+				<img class="arrow-img" width="72" height="91" src="img/Arrow.png" alt="arrow" />
 			</div>
-			<div class="apps flexbox">
+
+		</header>
+
+		<section class="features flexbox flex-3">
+				<h2 class="hidden-heading">Ukryty nagłówek</h2>
+			<article class="feature">
+				<div class="head-features">
+					<img src="img/toolsicon.png" alt="From Start to Finish">
+					<h3 class="title">From Start to Finish </h3>
+				</div>
+
+				<p class="text">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text ever since
+					the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen</p>
+			</article>
+
+			<article class="feature">
+				<div class="head-features">
+					<img src="img/innovationicon.png" alt="Innovation">
+					<h3 class="title">Innovation</h3>
+				</div>
+
+				<p class="text">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+					ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen</p>
+			</article>
+			<article class="feature">
+				<div class="head-features">
+					<img src="img/loveIcon.png" alt="A CARE FOR STANDARDS">
+					<h3 class="title">A CARE FOR STANDARDS</h3>
+				</div>
+
+				<p class="text">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum dummy text ever since the 1500s, when an unknown
+					printer took a galley of type and scrambled it to make a type specimen</p>
+			</article>
+
+			<article class="feature">
+				<div class="head-features">
+					<img src="img/phoneIcon.png" alt="Mobile & Desktop">
+					<h3 class="title">Mobile & Desktop</h3>
+				</div>
+
+				<p class="text">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+					ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen</p>
+			</article>
+			<article class="feature">
+				<div class="head-features">
+					<img src="img/gameIcon.png" alt="Games & social fun">
+					<h3 class="title">Games & social fun</h3>
+				</div>
+
+				<p class="text">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+					ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen</p>
+			</article>
+
+			<article class="feature">
+					<h2 class="hidden-heading">Ukryty nagłówek</h2>
+				<img src="img/TwitterIcon.png" alt="Twitter">
+				<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+					dummy text ever since</p>
+			</article>
+		</section>
+
+		<section class="section-apps">
+			<div class="section-header entry flexbox">
+				<h2 class="main-heading">Shall we take a look at
+					<br>
+					<span class="main-heading-important">our work?</span>
+				</h2>
+				<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+					dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+					book. </p>
+			</div>
+			<div class="apps flexbox flex-3">
 				<article class="carousel-slide" id="slide1">
 					<div class="app-content">
+						<div class="info">
+							<h3 class="title">A crazy app #1</h3>
+							<p class="text">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has Is simply dummy text of the</p>
+
+						</div>
 						<div class="shape"></div>
-						<h3 class="app-heading">A crazy app #1</h3>
-						<a class="viewmore" href="#">View more</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsu Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+						<button type="button">View more</button>
 					</div>
-					<hr>
-					<div class="art-footer">
-						<a href=""><img class="android" src="icons/app-store.png" height="32" width="92" alt="icon-aps-store"></a>
-						<a href="#"><img id="play" src="icons/google-play.png" height="32" width="92" alt="icon-google-play"></a>
+
+					<div class="carousel-slide-footer">
+						<a href="">
+							<img class="android" src="img/android-icon.png" height="40" width="116" alt="icon-aps-store">
+						</a>
+						<a href="#">
+							<img src="img/googleplay-icon.png" height="40" width="116" alt="icon-google-play">
+						</a>
 					</div>
 
 				</article>
 				<article class="carousel-slide" id="slide2">
 					<div class="app-content">
+						<div class="info">
+							<h3 class="title">A crazy iphone app only #1</h3>
+							<p class="text">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has Is simply dummy text of the printing
+								and typesetting industry. Lorem Ipsum has</p>
+						</div>
+
 						<div class="shape"></div>
-						<h3 class="app-heading">A crazy iphone app only #2</h3>
-						<a class="viewmore" href="#">View more</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsu Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+						<button type="button">View more</button>
+
 					</div>
-					<hr>
-					<div class="art-footer">
-						<a href="#"><img class="android" src="icons/app-store.png" height="32" width="92" alt="icon-aps-store"></a>
+
+					<div class="carousel-slide-footer">
+						<a href="">
+							<img class="android" src="img/android-icon.png" height="40" width="116" alt="icon-aps-store">
+						</a>
+
 					</div>
 				</article>
 				<article class="carousel-slide" id="slide3">
 					<div class="app-content">
+						<div class="info">
+							<h3 class="title">A crazy android only app </h3>
+							<p class="text">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has Is simply dummy text of the printing
+								and typesetting industry. Lorem Ipsum has</p>
+						</div>
 						<div class="shape"></div>
-						<h3 class="app-heading">A crazy android only app #3</h3>
-						<a class="viewmore" href="#">View more</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsu Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+						<button type="button">View more</button>
 					</div>
-					<hr>
-					<div class="art-footer">
-						<a href="#"><img src="icons/google-play.png" height="32" width="92" alt="icon-google-play"></a>
+
+					<div class="carousel-slide-footer">
+						<a href="#">
+							<img src="img/googleplay-icon.png" height="40" width="116" alt="icon-google-play">
+						</a>
 					</div>
 				</article>
 				<!-- Indicators -->
 			</div>
 			<ul class="carousel-indicators">
-				<li><a class="indicator" href="#slide1">1</a></li>
-				<li><a class="indicator" href="#slide2">2</a></li>
-				<li><a class="indicator" href="#slide3">3</a></li>
+				<li class="indicator-item">
+					<a class="indicator-link" href="#slide1"></a>
+				</li>
+				<li class="indicator-item">
+					<a class="indicator-link active" href="#slide2"></a>
+				</li>
+				<li class="indicator-item">
+					<a class="indicator-link" href="#slide3"></a>
+				</li>
 			</ul>
 		</section>
 
-		<section class="our-team">
-			<h2 class="main-heading">We are a small team<br><span class="main-heading-important">with big ideas!</span></h2>
+		<section class="section-team">
+			<div class="section-header entry">
+				<h2 class="main-heading">We are a small team
+					<br>
+					<span class="main-heading-important">with big ideas!</span>
+				</h2>
+			</div>
 			<div class="flexbox">
 				<article class="card-info">
 					<div class="circle-photo"></div>
 					<div class="info-content">
-						<h3 class="info-name">Bernard Marcus</h3>
-						<h4 class="info-post">Founder, Ceo & Go-to-guy</h4>
-						<p class="info-text">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-						<span class="fa fa-linkedin-square" aria-hidden="true"></span><span class="fa fa-facebook-square" aria-hidden="true"></span><span class="fa fa-twitter-square" aria-hidden="true"></span>
+						<h3 class="title">Bernard Marcus</h3>
+						<h4 class="subtitle">Founder, Ceo & Go-to-guy</h4>
+						<p class="text">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen</p>
+						<img src="img/Linkedin.png" alt="Linkedin">
+						<img src="img/Facebook.png" alt="Facebook">
+						<img src="img/Twitter.png" alt="Twitter">
 					</div>
 				</article>
 				<article class="card-info">
 					<div class="circle-photo"></div>
 					<div class="info-content">
-						<h3 class="info-name">Willow Nona</h3>
-						<h4 class="info-post">Lead Designer</h4>
-						<p class="info-text">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-						<span class="fa fa-linkedin-square" aria-hidden="true"></span><span class="fa fa-facebook-square" aria-hidden="true"></span><span class="fa fa-twitter-square" aria-hidden="true"></span>
+						<h3 class="title">Willow Nona</h3>
+						<h4 class="subtitle">Lead Designer</h4>
+						<p class="text">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+							ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen </p>
+						<img src="img/Dribbble.png" alt="Linkedin">
+						<img src="img/Forrst.png" alt="Facebook">
+						<img src="img/Twitter.png" alt="Twitter">
 					</div>
 				</article>
 			</div>
@@ -169,106 +236,151 @@
 				<article class="card-info">
 					<div class="circle-photo"></div>
 					<div class="info-content">
-						<h3 class="info-name">Zack Joel</h3>
-						<h4 class="info-post">Almighty developer</h4>
-						<p class="info-text">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-						<span class="fa fa-linkedin-square" aria-hidden="true"></span><span class="fa fa-facebook-square" aria-hidden="true"></span><span class="fa fa-twitter-square" aria-hidden="true"></span>
+						<h3 class="title">Zack Joel</h3>
+						<h4 class="subtitle">Almighty developer</h4>
+						<p class="text">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+							ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen </p>
+						<img src="img/Linkedin.png" alt="Linkedin">
+						<img src="img/Facebook.png" alt="Facebook">
+						<img src="img/Twitter.png" alt="Twitter">
 					</div>
 				</article>
 				<article class="card-info">
 					<div class="circle-photo"></div>
 					<div class="info-content">
-						<h3 class="info-name">Barbara Hillie</h3>
-						<h4 class="info-post">Booker & all things financial</h4>
-						<p class="info-text">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-						<span class="fa fa-linkedin-square" aria-hidden="true"></span><span class="fa fa-facebook-square" aria-hidden="true"></span><span class="fa fa-twitter-square" aria-hidden="true"></span>
+						<h3 class="title">Barbara Hillie</h3>
+						<h4 class="subtitle">Booker & all things financial</h4>
+						<p class="text">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+							ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen </p>
+						<img src="img/Linkedin.png" alt="Linkedin">
+						<img src="img/Facebook.png" alt="Facebook">
+						<img src="img/Twitter.png" alt="Twitter">
 					</div>
 				</article>
 			</div>
 		</section>
 
 		<section class="contact-section">
-			<div class="section-header flexbox">
-				<h3 class="section-heading">We would love<br><span class="important-text">to hear from you!</span></h3>
-				<p class="section-header-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...Lorem ipsum dolor sit amet</p>
+			<div class="section-header entry flexbox">
+				<h2 class="main-heading">WE WOULD LOVE
+					<br>
+					<span class="main-heading-important">TO HEAR FROM YOU!</span>
+				</h2>
+				<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+					dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+					book. </p>
 			</div>
-			<div class="contact flexbox">
-				<div class="contact-box">
-					<form class="form" id="form">
-						<h1 class="form-heading">Contact form</h1>
-						<label class="label" for="name">Your Name</label>
-						<input type="text" class="input" name="name"  required/>
+			<section class="section-form flexbox">
+					<h2 class="hidden-heading">Ukryty nagłówek</h2>
+				<form class="form" id="form">
+					<label class="label" for="yourname"></label>
+					<input type="text" class="input" id="yourname" name="yourname" placeholder="Your Name" required/>
 
-						<label class="label" for="email">Your E-mail</label>
-						<input type="email" class="input" name="email" id="email" required/>
-						<div class="tooltip" id="tooltipEmail"></div>
+					<label class="label" for="email"></label>
+					<input type="email" class="input" name="email" id="email" placeholder="Your E-mail" required/>
 
-						<label class="label" for="psw">Enter Password</label>
-						 <input type="password"  class="input" name="psw" minlength="8" maxlength="8">
-
-						 <label class="label" for="reenterpsw">Reenter Password</label>
-						 <input type="password"  class="input" name="reenterpsw" minlength="8" maxlength="8">
-
-						<label class="label" for="phone">Your Phone Number</label>
-						<input type="text" class="input" name="phone" id="phone" required/>
-						<div class="tooltip" id="tooltipNumber"></div>
-
-						<label class="label" for="message">Speak Your Mind</label>
-						<textarea class="message" name="message" id="message" required></textarea>
+					<label class="label" for="message"></label>
+					<textarea class="message" name="message" id="message" placeholder="Speak Your Mind" required></textarea>
 
 
-						<label class="label" id="labelAdd" for="addition"></label>
-						<input type="text" class="input" name="addition" id="addition" required />
-						<div class="tooltip" id="tooltipAdd"></div>
+					<label class="label" for="recaptcha"></label>
+					<input type="text" class="recaptcha" name="recaptcha" id="recaptcha" value="2+2" required />
+					<button type="submit" class="send">SEND</button>
+				</form>
 
-						<p class="form-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen</p>
-						<div class="form-group">
-							<label for="exampleFormControlFile1"></label>
-							<input type="file" class="form-control-file" name="exampleFormControlFile1" id="exampleFormControlFile1">
+				<div class="quicknotes">
+					<article class="note">
+						<time datetime="2012-04-01" class="time">April 1st 2012</time>
+						<h4 class="title">WE'RE HIRING!</h4>
+						<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+							dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+							book.
+						</p>
+					</article>
+					<article class="note">
+						<time datetime="2012-01-23" class="time">January 23rd 2012</time>
+						<h4 class="title">We will be at conf 2012</h4>
+						<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+							dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+							book.
+						</p>
+						<div class="pagination">
+							<p class="quicknotes-archive">Quicknotes archive:</p>
+							<ul class="pagination-list">
+								<li class="item-pag">
+									<a class="arrow prev" href="#">&lt;</a>
+								</li>
+								<li class="item-pag">
+									<a class="link-pag active" href="#">1</a>
+								</li>
+								<li class="item-pag">
+									<a class="link-pag" href="#">2</a>
+								</li>
+								<li class="item-pag">
+									<a class="link-pag" href="#">3</a>
+								</li>
+								<li class="item-pag">
+									<a class="arrow next" href="#">&gt;</a>
+								</li>
+							</ul>
 						</div>
-						<input type="submit" class="form-button" name="form-button" value="Submit" />
-						<div class="tooltip" id="tooltipSend"></div>
-					</form>
-				</div>
-				<div class="coment-box">
-					<div class="coment">
-						<time datetime="2012-01-01" class="time">1 stycznia 2012</time>
-						<h4 class="coment-heading">WE'RE HIRING!</h4>
-						<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-						</p>
-					</div>
-					<div class="coment">
-						<time datetime="2012-01-01" class="time">1 stycznia 2012</time>
-						<h4 class="coment-heading">WE'RE HIRING!</h4>
-						<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-						</p>
-					</div>
-					<p class="quicknotes-archive">Quicknotes archive</p>
-					<ul class="pagination">
-						<li class="item-pag"><a class="link-pag" href="#">&lt;</a></li>
-						<li class="item-pag"><a class="link-pag active-coment" href="#">1</a></li>
-						<li class="item-pag"><a class="link-pag" href="#">2</a></li>
-						<li class="item-pag"><a class="link-pag" href="#">3</a></li>
-						<li class="item-pag"><a class="link-pag" href="#">&gt;</a></li>
-					</ul>
-				</div>
-			</div>
-			<div>
-			</div>
-			<aside class="aside"><a class="top-page" href="#"><span class="fa fa-caret-up" aria-hidden="true"></span><br>UP</a></aside>
-		</section>
 
+					</article>
+
+				</div>
+				<aside class="aside">
+					<a class="top-page" href="#">
+						<div class="triangle"></div>UP</a>
+				</aside>
+			</section>
+
+		</section>
+		<footer class="footer flexbox">
+			<div class="copyright-box">
+				<h6 class="title">Copyright Mobile Ninjas 2012</h6>
+				<ul class="list-footer">
+					<li class="item-list-footer">
+						<a class="menu-link-footer" href="#">Home |</a>
+					</li>
+					<li class="item-list-footer">
+						<a class="menu-link-footer" href="#">Apps |</a>
+					</li>
+					<li class="item-list-footer">
+						<a class="menu-link-footer" href="#">Team |</a>
+					</li>
+					<li class="item-list-footer">
+						<a class="menu-link-footer" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="social-box">
+				<a href="#">
+						<img src="img/footer-icon-googleplus.png" alt="googleplus">
+				</a>
+					
+				<span class="var-bg">
+					<img src="img/footer-bg-4k.png" alt="">
+					<span class="var">4k</span>
+				</span>
+				<a href="#">
+					<img src="img/footer-icon-tweet.png" alt="">
+				</a>
+				<span class="var-bg">
+					<img src="img/footer-bg-var.png" alt="">
+					<span class="var">1,856,701</span>
+				</span>
+				<a href="#">
+					<img src="img/footer-icon-facebook.png" alt="">
+				</a>
+				<span class="var-bg">
+					<img src="img/footer-bg-4k.png" alt="">
+					<span class="var">4k</span>
+				</span>
+
+			</div>
+
+		</footer>
 	</main>
-	<footer class="footer">
-		<h6 class="copyright">Copyright Mobile Ninjas 2012</h6>
-		<ul class="list-footer">
-			<li class="item-list-footer"><a class="menu-link-footer" href="#">Home |</a></li>
-			<li class="item-list-footer"><a class="menu-link-footer" href="#">Apps |</a></li>
-			<li class="item-list-footer"><a class="menu-link-footer" href="#">Team |</a></li>
-			<li class="item-list-footer"><a class="menu-link-footer" href="#">Contact</a></li>
-		</ul>
-	</footer>
-	<script src="script.js"></script>
 </body>
 
 </html>

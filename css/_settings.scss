@@ -1,0 +1,28 @@
+$primaryColor: #ffffff;
+$secondColor: #5a9692;
+$colorText: rgb(126, 126, 126);
+$colorSubTitle: #99ab49;
+$buttonColor: #e74b47;
+$carouselSlide: #f5f1e6;
+// font
+$fontFamilyPrimary: "Londrina", sans-serif;
+$fontFamilySecond: "BebasNeue",sans-serif;
+$fontFamilyThird: "ArialMT", sans-serif;
+$smallText: 0.8em;
+$paragraphSizeText: 0.9em;
+@mixin absolute($absolute, $top, $right) {  
+    position: $absolute;
+    top: $top;
+    right: $right;
+}
+
+@font-face {
+    font-family: Londrina;
+    src: url("../fonts/LondrinaSolid-Regular.otf");
+}
+
+@font-face {
+    font-family: "BebasNeue"; 
+    src: url("../fonts/BebasNeue.otf");
+}
+ 
